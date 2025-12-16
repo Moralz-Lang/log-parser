@@ -1,0 +1,2 @@
+sudo cp /var/log/auth.log ./auth.log
+sudo chown $USER:$USER auth.log
