@@ -1,0 +1,47 @@
+Running on Linux
+Copy Logs
+sudo cp /var/log/auth.log ./auth.log
+sudo chown $USER:$USER auth.log
+
+Run Parser
+cd parser
+python3 log_parser.py auth.log
+
+Output Format
+{
+  "timestamp": "Dec 12 10:10:10",
+  "host": "server",
+  "service": "sshd",
+  "pid": "1234",
+  "message": "Failed password for root from 192.168.1.1 port 22",
+  "ip": "192.168.1.1",
+  "raw": "Dec 12 10:10:10 server sshd[1234]: Failed password..."
+}
+
+Use Cases
+
+SOC log preprocessing
+
+SIEM ingestion pipelines
+
+Authentication analysis
+
+Brute-force detection
+
+Threat hunting
+
+Data preparation for large-scale analysis
+
+Future Work
+
+Windows Event ID parsing
+
+MITRE ATT&CK mapping
+
+Batch processing with NumPy
+
+Performance optimization
+
+GPU acceleration
+
+Live log streaming
