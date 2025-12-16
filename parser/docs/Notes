@@ -1,0 +1,10 @@
+Logs are processed locally
+
+Sensitive fields can be redacted before parsing if required
+
+
+---
+
+# 📄 `output/.gitkeep`
+
+```text
